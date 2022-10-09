@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 400px;
+    padding: 1em;
+    margin: 2em;
+    min-width: 300px;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.thumbnail {
+    transition: 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
