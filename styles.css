@@ -13,17 +13,18 @@ body {
     justify-content: center;
     align-items: flex-start;
     flex-flow: row wrap;
-    width: 100%;
-    background-color: blueviolet;
+    width: 90%;
+    background-color: #ddd;
+    margin: auto;
 }
 
 .card {
     background-color: white;
-    border-radius: 8px;
-    max-width: 400px;
+    border-radius: 8px;  
     padding: 1em;
     margin: 2em;
     min-width: 300px;
+    flex: 1;
 }
 
 .card h2 {
@@ -35,5 +36,23 @@ body {
 }
 
 .thumbnail:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+}
+
+@media (min-width: 800px) {
+    .card {
+        width: 32%;
+    }
+}
+
+@media (min-width: 640px) {
+    .card {
+        width: 49%;
+    }
+}
+
+@media (min-width: 480px) {
+    .card {
+        width: 99%;
+    }
 }
