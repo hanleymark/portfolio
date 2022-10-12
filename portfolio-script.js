@@ -1,7 +1,6 @@
-function showHideCardText(textID, textIntroID, buttonID) {
-    var text = document.querySelector(textID);
-    var textIntro = document.querySelector(textIntroID);
-    var button = document.querySelector(buttonID);
+function showHideCardText(textID, buttonID) {
+    const text = document.querySelector(textID);
+    const button = document.querySelector(buttonID);
 
     if (text.style.display === "none") {
       text.style.display = "block";
@@ -10,8 +9,6 @@ function showHideCardText(textID, textIntroID, buttonID) {
       text.style.display = "none";
       button.innerHTML="Show more";
     }
-    // Make sure first words of card text are displayed
-    textIntro.style.display = "block";
   }
 
   function collapseAllCardText() {
